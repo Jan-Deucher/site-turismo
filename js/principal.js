@@ -14,13 +14,23 @@ $('.carrosel').slick({
 
   $('#click-resumo-campos').click(function(){
    
-    $('.slider').slideDown(1000);
-    $('.slider').removeClass('hide');
+    $('.slider-campos-do-jordao').slideDown(1000);
+    $('.slider-campos-do-jordao').removeClass('hide');
   });
 
-  
-  
   $('#fechar').click(function(){
     
-    $('.slider').addClass('hide');
+    $('.slider-campos-do-jordao').addClass('hide');
+  });
+
+ 
+  $('#click-resumo-alfredo-wagner').click(function(){
+   
+    $('.slider-alfredo-wagner').slideDown(1000);
+    $('.slider-alfredo-wagner').removeClass('hide');
+  });
+
+  $('#fechar2').click(function(){
+    
+    $('.slider-alfredo-wagner').addClass('hide');
   });

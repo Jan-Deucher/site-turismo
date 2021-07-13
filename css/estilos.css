@@ -62,17 +62,19 @@ a{
     width: 60%;
 }
 
-.slider{
+.slider-campos-do-jordao, .slider-alfredo-wagner{
     margin-top: 5%;
     position: absolute;
     z-index: 100;
     display: none;
 }
+
+
 .caption{
     background-color: rgba(169, 169, 169, 0.404);
 }
 
-#fechar{
+#fechar, #fechar2{
     background-color: rgb(98, 192, 75);
     color: rgb(255, 241, 241);
     font-size: 20px;
