@@ -1,19 +1,26 @@
 body{
     font-family: 'Comfortaa', cursive;
-    background-image: linear-gradient( 109.5deg,  rgba(229,233,177,1) 11.2%, rgba(223,205,187,1) 100.2% );
-   
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
+
+    
+    
+    
 }
 
 header{
    
     margin: 30px 123.2px;
     padding: 13px 20px 0px;
+   
     
 }
 
+
 #titulo{
-    color: darkgoldenrod;
+    color:darkgoldenrod;
     text-decoration:none;
+   
+    
 }
 a{
     color: darkgoldenrod;
@@ -40,8 +47,40 @@ a{
     margin-top: -9%;
 }
 
+
+.row .col.s6 {
+    width: 50%;
+    margin-top: 3%;
+    margin-left: -5%;
+}
+
+#calendario-ida{
+    background-color:rgb(32, 100, 134);
+    width: 20%;
+    margin-top: -7%;
+    margin-right: 60%;
+    text-align: center;
+    float: right;
+  
+}
+#calendario-volta{
+    width: 20%;
+    margin-top: -7%;
+    margin-right: 39%;
+    text-align: center;
+    float: right;
+    background-color: rgb(32, 100, 134);
+}
+
+#botao-pesquisa{
+    float: right;
+    margin-right: 30%;
+    margin-top: -6.5%; 
+}
+
 .carrosel-principal{
     width: 100%;
+    float: left;
 }
 
 .carrosel{
@@ -127,6 +166,14 @@ a{
     color: cornsilk;
 }
 
+
+.slider-detalhe{
+    margin-top: 5%;
+}
+.titulo-mais, .texto-mais{
+    margin-top: 5%;
+    text-align: center;
+}
 
 
 

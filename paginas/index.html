@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@392;500&family=Encode+Sans+SC:wght@300&family=Uchen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
@@ -16,19 +17,17 @@
 <body>
   <header>
 
-        <h3 id="titulo">♚ Deucher Viagens</h3>
-        <h6 id="subtitulo">Seu destino é aqui.</h6>
-        <div >
-            <ul id="options">
-            <li><a class="option" href="#">Viagem Nacional</a></li> 
-            <li><a class="option" href="#">Viagem Internacional</a></li>
-            <li><a class="option" href="../paginas/pacotes-promocionais.html">Pacotes Promocionais</a></li>
-            </ul>
-        </div>
+    <h3 id="titulo">♚ Deucher Viagens</h3>
+    <h6 id="subtitulo">Seu destino é aqui.</h6>  
+    <ul id="options">
+      <li><a class="option" href="#">Viagem Nacional</a></li> 
+      <li><a class="option" href="#">Viagem Internacional</a></li>
+      <li><a class="option" href="../paginas/pacotes-promocionais.html">Pacotes Promocionais</a></li>
+    </ul>
   </header>
       
   <div class="main">
-
+   
     <div class="slider slider-campos-do-jordao">
       <ul class="slides">
         <li>
@@ -92,7 +91,22 @@
       <a id="fechar2" href="#">Fechar</a>
     </div>
     </div>
-
+   
+      <div class="row busca">
+        <form class="col s6">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">search</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Seu destino</label>
+            </div>
+          </div>
+        </form>
+      
+      <input type="text" id="calendario-ida"class="datepicker" placeholder="Data de ida">
+      <input type="text" id="calendario-volta"class="datepicker" placeholder="Data de volta">
+      <a id="botao-pesquisa"class="waves-effect waves-light btn-small">Pesquisar</a>
+    </div>
     <div class="carrosel">
         <div>
             <h6 id="titulo-banner"> Promoção para curtir o inverno brasileiro: <b>Campos do Jordão/SP</b>, 
@@ -124,31 +138,11 @@
             <p id="descricao"></p>
           </div>
           <div class="card-action">
-            <a id="detalhes" href="http://localhost:8090/product/list">Detalhes</a>
+            <a id="detalhes" href="#">Detalhes</a>
           </div>
         </div>
       </div>
     </div>
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </div>
   

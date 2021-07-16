@@ -10,7 +10,11 @@ $('.carrosel').slick({
   $(document).ready(function(){
     $('.slider').slider();
   });
-       
+  
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+     
 
   $('#click-resumo-campos').click(function(){
    
@@ -34,10 +38,8 @@ $('.carrosel').slick({
     
     $('.slider-alfredo-wagner').addClass('hide');
   });
-
   
-  
-  $.get( "http://localhost:8090/product/list", function( produtos ) {
+  $.get( "http://localhost:8090/product/list", ( produtos ) => {
     for(id in produtos){
      
       console.log(produtos[id])      
@@ -46,23 +48,24 @@ $('.carrosel').slick({
       $clone.removeAttr("style")
       console.log($clone)
       
-      $clone.find("#img-card").attr('src', produtos[id].image);
       $clone.find("#nome").attr('src', produtos[id].name);
       $clone.find("#descricao").attr('src', produtos[id].description);
-      $clone.find("#detalhes").attr('src', produtos[id].id);
+      $clone.find("#detalhes").attr('href',"file:///C:/projetos/site-turismo/paginas/detalhes.html?"+ produtos[id].id);
       
+      $.post( "http://localhost:8090/images/"+produtos[id].id, ( images ) => {
+        $clone.find("#img-card").attr('src', images[images.length-1].url);
+      });
+
       console.log( produtos[id].id)      
       
       $("#cards").prepend($clone);
       $("#descricao").text(produtos[id].description);
       $("#nome").text(produtos[id].name);
-      $("#detalhes").val(produtos[id].id);
-
+     
+      
     }
   });
 
-$.get("http://localhost:8090/product/"), function(){
-    $("#detalhes").val(produtos[id].id);
-}
+
 
 
