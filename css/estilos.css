@@ -2,26 +2,18 @@ body{
     font-family: 'Comfortaa', cursive;
     background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
 
-    
-    
-    
 }
 
-header{
-   
+header{  
     margin: 30px 123.2px;
-    padding: 13px 20px 0px;
-   
-    
+    padding: 13px 20px 0px; 
 }
-
 
 #titulo{
     color:darkgoldenrod;
-    text-decoration:none;
-   
-    
+    text-decoration:none;  
 }
+
 a{
     color: darkgoldenrod;
 }
@@ -56,6 +48,7 @@ a{
 
 #calendario-ida{
     background-color:rgb(32, 100, 134);
+    border-radius: 5px;
     width: 20%;
     margin-top: -7%;
     margin-right: 60%;
@@ -70,6 +63,7 @@ a{
     text-align: center;
     float: right;
     background-color: rgb(32, 100, 134);
+    border-radius: 5px;
 }
 
 #botao-pesquisa{
@@ -84,7 +78,7 @@ a{
 }
 
 .carrosel{
-    margin-top: 7%;
+    margin-top: -2%;
     box-shadow: 2px 2px 5px rgb(47, 16, 16);  
 }
 
@@ -125,7 +119,7 @@ a{
     background-image: linear-gradient( 0.2deg,  rgba(51,204,255,1) 4.8%, rgba(51,102,255,1) 85.5% );
     color: rgb(255, 251, 242);
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     font-size: 20px;
     margin-bottom: -3px;
 }
@@ -145,7 +139,7 @@ a{
     color: rgb(255, 255, 255);
     background-image: linear-gradient( 0.2deg,  rgba(51,204,255,1) 4.8%, rgba(51,102,255,1) 85.5% );
     padding: 20px;
-    margin-top: -3px;
+    margin-top: 5px;
 }
 #tit-pacotes{
     margin-top: 10%;
